@@ -23,14 +23,15 @@
     ],
     "import-spacing": true,
     "indent": [
-      true,
-      "spaces"
+      true, 
+      "spaces", 
+      4
     ],
     "interface-over-type-literal": true,
     "label-position": true,
     "max-line-length": [
       true,
-      140
+      100
     ],
     "member-access": false,
     "member-ordering": [
