@@ -1,9 +1,32 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+/* Make the application take the whole available screen and put a nice font and background color. */
 html, body {
     height: 100%;
     width: 100%;
     margin: 0%;
-    background: linear-gradient(to bottom, rgb(243, 243, 243) 90%, #D32F2F 10%);
+    background: rgb(243, 243, 243);
     font-family: Raleway, Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Main button style. */
+button {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: rgb(243, 243, 243);
+    color: black;
 }
