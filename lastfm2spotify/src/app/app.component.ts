@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
 
         if (spotifyToken) {
             // Redirect to the main component.
+            this.router.navigateByUrl('/playlist-creator')
         } else {
             // Check if the current URL is the spotify-login, if not, redirect there.
             // Since the router's URL is async, delay the excution for a few milisecs.

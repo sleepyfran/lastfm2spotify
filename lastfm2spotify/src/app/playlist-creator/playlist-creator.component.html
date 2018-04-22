@@ -1,0 +1,37 @@
+<section>
+    <!-- Username input. -->
+    <div class="data-section">
+        <div class="data-input">
+            <p>Enter your Last.fm username:</p>
+            <input type="text" placeholder="Last.fm username">
+        </div>
+
+        <div class="data-input">
+            <p>Into the Spotify playlist:</p>
+            <input type="text" placeholder="Playlist name">
+        </div>
+    </div>
+
+    <!-- Type of import from Last.fm: Loved tracks, 30 days, 3 months, etc... -->
+    <p>What do you want to import?</p>
+    <div class="lastfm-type-list">
+        <button [class.active]="currentType === 'loved'" (click)="currentType = 'loved'">
+            Loved tracks
+        </button>
+
+        <button [class.active]="currentType === '30days'" (click)="currentType = '30days'">
+            Top 30 days tracks
+        </button>
+
+        <button [class.active]="currentType === '3months'" (click)="currentType = '3months'">
+            Top 3 months tracks
+        </button>
+
+        <button [class.active]="currentType === '6months'" (click)="currentType = '6months'">
+            Top 6 months tracks
+        </button>
+    </div>
+
+    <!-- Let's do it! button -->
+    <button class="import-button">Import it!</button>
+</section>

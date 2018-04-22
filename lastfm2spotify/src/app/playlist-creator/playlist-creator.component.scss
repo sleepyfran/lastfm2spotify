@@ -1,0 +1,60 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 20px;
+
+    /* Input of the Last.fm username and Spotify playlist name. */
+    .data-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        /* All text input inside the section. */
+        input[type=text] {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .data-input {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            min-width: 300px;
+        }
+    }
+
+    /* Type of import from Last.fm: Loved tracks, 30 days, 3 months, etc... */
+    .lastfm-type-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        /* Type selectors. */
+        button {
+            min-width: 200px;
+            min-height: 200px;
+            background-color: rgb(53, 53, 53);
+            border: 2px solid d51107;
+            color: white;
+
+            &:hover {
+                background-color: #999999;
+                color: white;
+            }
+
+            &.active {
+                background-color: #999999;
+                color: white;
+            }
+        }
+    }
+
+    /* Import button. */
+    .import-button {
+        width: 50%;
+        margin-top: 30px;
+        align-self: center;
+    }
+}

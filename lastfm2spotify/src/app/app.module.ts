@@ -5,18 +5,20 @@ import { AppComponent } from './app.component'
 import { AppRoutingModule } from './/app-routing.module'
 import { SpotifyLoginComponent } from './spotify-login/spotify-login.component'
 import { LocalStorageService } from './services/local-storage.service';
+import { PlaylistCreatorComponent } from './playlist-creator/playlist-creator.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SpotifyLoginComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
-  providers: [LocalStorageService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        SpotifyLoginComponent,
+        PlaylistCreatorComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+    ],
+    providers: [LocalStorageService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
