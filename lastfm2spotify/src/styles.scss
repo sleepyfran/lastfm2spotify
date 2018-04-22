@@ -27,8 +27,8 @@ button {
 }
 
 button:hover {
-    background-color: rgb(243, 243, 243);
-    color: black;
+    background-color: rgb(24, 24, 24);
+    transform: scale(1.03);
 }
 
 /* Main input style. */
@@ -36,7 +36,7 @@ input[type=text] {
     padding-left: 10px;
     min-height: 30px;
     border-radius: 3px;
-    border: 1px solid rgb(53, 53, 53);
+    border: 1px solid rgb(24, 24, 24);
 
     font-family: Raleway, Roboto, "Helvetica Neue", sans-serif;
     font-size: 1rem;

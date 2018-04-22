@@ -35,18 +35,18 @@ section {
         button {
             min-width: 200px;
             min-height: 200px;
-            background-color: rgb(53, 53, 53);
+            background-color: rgb(24, 24, 24);
             border: 2px solid d51107;
             color: white;
 
             &:hover {
-                background-color: #999999;
-                color: white;
+                background-color: rgb(54, 54, 54);
+                transform: scale(1.03);
             }
 
             &.active {
-                background-color: #999999;
-                color: white;
+                background-color: rgb(54, 54, 54);
+                transform: scale(1.03);
             }
         }
     }
