@@ -30,23 +30,18 @@ section {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 5px;
 
         /* Type selectors. */
         button {
             min-width: 200px;
             min-height: 200px;
-            background-color: rgb(24, 24, 24);
-            border: 2px solid d51107;
-            color: white;
+            margin: 5px;
 
-            &:hover {
-                background-color: rgb(54, 54, 54);
-                transform: scale(1.03);
-            }
-
-            &.active {
-                background-color: rgb(54, 54, 54);
-                transform: scale(1.03);
+            &:hover, &.active {
+                box-shadow: 0 1px 15px rgba(27,31,35,0.15);
+                border: 1px solid rgba(27, 31, 35, 0.5);
+                transform: scale(1.035);
             }
         }
     }
