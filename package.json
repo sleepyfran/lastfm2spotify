@@ -1,6 +1,6 @@
 {
   "name": "lastfm2spotify",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -52,5 +52,8 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
+  },
+  "engines": {
+    "node": "9.3.0"
   }
 }
