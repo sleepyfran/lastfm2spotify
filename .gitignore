@@ -1,6 +1,5 @@
 .settings/
 .vscode/
-tsconfig.json
 jsconfig.json
 
 # compiled output
