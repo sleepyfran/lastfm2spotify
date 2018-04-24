@@ -3,6 +3,7 @@ node_js:
 - 9.3.0
 before_install:
 - npm install -g @angular/cli
+- cd lastfm2spotify
 install: npm install
 branches:
   only:
