@@ -7,4 +7,3 @@
 Lastfm2Spotify allows you to easily import songs from your Last.fm account into a Spotify playlist.
 
 **Currently in development**
-[![Build Status](https://travis-ci.org/spaceisstrange/lastfm2spotify.svg?branch=production)](https://travis-ci.org/spaceisstrange/lastfm2spotify)
