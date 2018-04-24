@@ -3,14 +3,22 @@
   <div class="data-section">
     <div class="data-input">
       <p>Enter your Last.fm username:</p>
-      <input #lastfmUsernameInput="ngModel" [class.invalid]="!lastfmUsernameInput.valid && lastfmUsernameInput.touched" type="text"
-        placeholder="Last.fm username" [(ngModel)]="lastfmUsername" name="lastfmUsername" required>
+      <input #lastfmUsernameInput="ngModel"
+        [class.invalid]="!lastfmUsernameInput.valid && lastfmUsernameInput.touched"
+        type="text"
+        placeholder="Last.fm username"
+        [(ngModel)]="lastfmUsername"
+        name="lastfmUsername" required>
     </div>
 
     <div class="data-input">
       <p>Import songs into the Spotify playlist:</p>
-      <input #spotifyPlaylistNameInput="ngModel" [class.invalid]="!spotifyPlaylistNameInput.valid && spotifyPlaylistNameInput.touched"
-        type="text" placeholder="Playlist name" [(ngModel)]="spotifyPlaylistName" name="spotifyPlaylistName" required>
+      <input #spotifyPlaylistNameInput="ngModel"
+        [class.invalid]="!spotifyPlaylistNameInput.valid && spotifyPlaylistNameInput.touched"
+        type="text"
+        placeholder="Playlist name"
+        [(ngModel)]="spotifyPlaylistName"
+        name="spotifyPlaylistName" required>
     </div>
   </div>
 
