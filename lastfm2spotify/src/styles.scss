@@ -36,8 +36,15 @@ input[type=text] {
     padding-left: 10px;
     min-height: 30px;
     border-radius: 3px;
-    border: 1px rgb(24, 24, 24) solid;
+    border: 0;
+    background: #696d72;
+    color: white;
+
 
     font-family: Raleway, Roboto, "Helvetica Neue", sans-serif;
     font-size: 1rem;
+}
+
+input[type=text]::placeholder {
+    color: rgb(211, 211, 211);
 }
