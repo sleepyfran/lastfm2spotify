@@ -8,13 +8,13 @@ section {
     .data-section {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 20px;
 
         /* All text input inside the section. */
         input[type=text] {
             width: 100%;
-            margin-bottom: 20px;
         }
 
         .data-input {
@@ -48,7 +48,7 @@ section {
 
     /* Import button. */
     .import-button {
-        width: 50%;
+        width: 25%;
         margin-top: 30px;
         align-self: center;
     }
