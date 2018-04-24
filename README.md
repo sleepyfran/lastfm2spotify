@@ -1,4 +1,4 @@
-<img src="https://github.com/spaceisstrange/lastfm2spotify/blob/master/lastfm2spotify/src/assets/img/logo.png?raw=true" width="600"/>
+<img src="https://github.com/spaceisstrange/lastfm2spotify/blob/master/src/assets/img/logo.png?raw=true" width="600"/>
 
 [![forthebadge](https://forthebadge.com/images/badges/compatibility-club-penguin.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/compatibility-ie-6.svg)](https://forthebadge.com)
