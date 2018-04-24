@@ -18,13 +18,9 @@ before_script:
 
 before_install:
 - npm install -g @angular/cli
-- cd lastfm2spotify
 
 install: 
 - npm install
-
-script: 
-- npm run build
 
 deploy:
   provider: heroku
