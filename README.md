@@ -24,7 +24,7 @@ export SPOTIFY_CLIENT_SECRET='your client secret'
 ```
 
 ## 3. Building
-These couple of variables are set in the Angular environment files with a script called `create-environment.js`, so you need to execute it before building or serving the app. There's already some npm commands to help you with that.
+This couple of variables are set in the Angular environment files with a script called `create-environment.js`, so you need to execute it before building or serving the app. There's already some nice npm commands to help you with that.
 
 ### 3.1. Local app serve
 ```SHELL
