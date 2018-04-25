@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { environment } from '../../environments/environment'
 import { LocalStorageService } from '../services/local-storage.service';
@@ -12,6 +12,7 @@ import { LocalStorageService } from '../services/local-storage.service';
 export class SpotifyLoginComponent implements OnInit {
 
     constructor(
+        private router: Router,
         private route: ActivatedRoute,
         private localStorageService: LocalStorageService,
     ) {
@@ -35,7 +36,15 @@ export class SpotifyLoginComponent implements OnInit {
         }
     }
 
-    ngOnInit() { }
+    ngOnInit() {
+        // Check if we already a Spotify token.
+        const spotifyToken = this.localStorageService.getToken()
+
+        if (spotifyToken) {
+            // Redirect to the main component.
+            this.router.navigateByUrl('/playlist-creator')
+        }
+    }
 
     /**
      * Redirects to the Spotify login page.
