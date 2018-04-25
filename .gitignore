@@ -43,3 +43,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# The environment files will be generated with the create-environment.js script
+/src/environments/environment.*.ts

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET } from '../../assets/secrets'
 import { environment } from '../../environments/environment'
 import { LocalStorageService } from '../services/local-storage.service';
 
@@ -48,9 +47,9 @@ export class SpotifyLoginComponent implements OnInit {
         // Let's build the Spotify login URL. Note: You'll need to createthe secrets.ts in the
         // assets folder and put a valid SPOTIFY_CLIENT_ID there.
         let loginUrl = 'https://accounts.spotify.com/authorize?response_type=code'
-        loginUrl += `&client_id=${SPOTIFY_CLIENT_ID}`
+        loginUrl += `&client_id=${environment.spotifyClientId}`
         loginUrl += `&scope=${scopes}`
-        loginUrl += `&redirect_uri=${environment.appUrl}/spotify-login`
+        loginUrl += `&redirect_uri=${document.location.origin}/spotify-login`
 
         window.location.href = loginUrl
     }
